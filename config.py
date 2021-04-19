@@ -9,7 +9,7 @@ class Config(object):
         "DATABASSE_URL"
     ) or "sqlite:///" + os.path.join(basedir, "app.db")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    POSTS_PER_PAGE = 25
+    POSTS_PER_PAGE = 3
 
     # Mail configuration
     MAIL_SERVER = os.environ.get("MAIL_SERVER")
